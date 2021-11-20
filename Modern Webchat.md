@@ -8,9 +8,9 @@ IRC is a relic of the past.
 
 ## Solution
 
-We visit the website and we land on a web chat where we can choose a nickname and a color. We can login and then be able send messages.
+We visit the website and we land on a web chat where we can choose a nickname and a color. We can login and then be able to send messages.
 
-From time to time we receive a message from the admin wich say :
+From time to time we receive a message from the admin which says :
 
 > **[admin]** **LePireBot**: _Message restricted to administrators._
 
@@ -134,7 +134,7 @@ While debugging the websockets we can also see this admin property in the messag
 ```
 
 So the plan is to register as admin by setting admin to `true`, for that we gonna try to just append this at the end of the json data.
-A classic registration look like : 
+A classic registration looks like : 
 
 ```json
 {"nickname": "xl00t", "color": "#1337FF"}
@@ -159,7 +159,7 @@ With that we can access object properties in different ways :
  - `user.prototype.nickname`
  - `user.__proto__.nickname`
 
-Lets wrap up everything we learn so far and craft our final payload :
+Lets wrap up everything we learnt so far and craft our final payload :
 
 ```json
 {
@@ -196,7 +196,7 @@ input.addListener("data", function(mes) {
 });
 ```
 
-Now we lauch this script and enter a message in order to send our payload.
+Now we launch this script and enter a message in order to send our payload.
 
 ```
 xl00t@DESKTOP:~/thcon/modern-chat$ node main.js
